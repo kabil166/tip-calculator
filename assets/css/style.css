@@ -24,6 +24,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #c5b8b8;
     border: none;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -44,8 +45,10 @@ body{
     text-align: center;
 }
 input[type=text]{
-    width: 50px;
+    text-align: center;
+    width: 100px;
     outline: none;
+    background-color: aliceblue;
     padding: 5px 0;
     border: none;
     border-bottom: 1px solid black;
@@ -89,13 +92,22 @@ input[type=text]{
     background-color: gold;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+.btn:hover{
+    transform: translate(1px, .5px);
+}
 .btn__submit{
     background-color: rgb(59, 219, 59);
     width: fit-content;
 }
+.btn__submit:hover{
+    background-color: rgb(20, 78, 20);
+}
 
 .btn__reset{
-    background-color: rgb(109, 39, 39);
+    background-color: rgb(20, 19, 19);
+}
+.btn__reset:hover{
+    background-color: rgb(0, 0, 0) ;
 }
 .calculator__output{
     text-align: center;
