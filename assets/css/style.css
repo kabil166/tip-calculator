@@ -3,13 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-:root{
-    --primary-color : rgb(22, 117, 206);
-    --primary-dark: rgb(18, 89, 156);
-    --secondary-color: rgb(34, 240, 27);
-    --secondary-dark: rgb(31, 182, 26);
-}
 p{
     padding: 10px;
 }
