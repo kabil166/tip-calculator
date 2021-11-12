@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : rgb(22, 117, 206);
+    --primary-dark: rgb(18, 89, 156);
+    --secondary-color: rgb(34, 240, 27);
+    --secondary-dark: rgb(31, 182, 26);
+}
+p{
+    padding: 10px;
+}
+body{
+    letter-spacing: 1.1px;
+}
+
+.calculator{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.calculator__header{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: 2px 2px 0 rgba(255, 255, 255, .4);
+}
+.calculator__form{
+    padding: 10px;
+}
+.input{
+    text-align: center;
+}
+input[type=text]{
+    width: 50px;
+    outline: none;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.currencies, .services{
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    color: rgb(77, 72, 72);
+    border-radius: .5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+.services >option, .currencies >option{
+    background-color: azure;
+    color: #070707;
+}
+.currencies:focus,
+.currencies:hover,
+.services:focus,
+.services:hover{
+    height: 30px;
+    border: 1px solid rgb(30, 58, 30);
+    outline: none;
+    transition: .4s;
+    -webkit-transform-origin-y: 3px;
+}
+.calculator__btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    width: 80px;
+    padding: 10px;
+    border-radius: .5rem;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: gold;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.btn__submit{
+    background-color: rgb(59, 219, 59);
+    width: fit-content;
+}
+
+.btn__reset{
+    background-color: rgb(109, 39, 39);
+}
+.calculator__output{
+    text-align: center;
+}
+.calculator__out{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <header class="calculator__header">
+            <p>TIPCALCULATOR</p>
+        </header>
+        <div class="calculator__form">
+            <form action="" id="inputs">
+                <div class="input">
+                    <p>How much was your bill?</p>
+                    <select name="currencies" id="currency" class="currencies">
+                        <option value="$" selected>$(US)</option>
+                        <option value="₹">₹(INR)</option>
+                        <option value="€">€(Euro)</option>
+                    </select>
+                    <input type="text" pattern="[0-9]+([\.][0-9]{0,2})?" placeholder="Bill" id="amount">
+                </div>
+                <div class="input">
+                    <p>How was the service?</p>
+                    <select name="services" id="service" class="services">
+                        <option value="" disabled selected>Select</option>
+                        <option value="0">Terrible</option>
+                        <option value="10"> Good 10%</option>
+                        <option value="20"> Better 20%</option>
+                        <option value="30"> Outstanding 30%</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <p>How many people are sharing bill?</p>
+                    <input type="text" id="people" pattern="[0-9]+" placeholder="People">
+                </div>
+            </form>
+        </div>
+        <div class="calculator__btns">
+                <button onclick="calc()" class="btn btn__submit">Calculate</button>
+                <button onclick ="reset()" class="btn btn__reset">Reset</button>
+        </div>
+        <div class="calculator__output">
+            <div class="calculator__out">
+                <p id="curr"></p>
+                <p id="tip"></p>
+            </div>
+            <p id="default"></p>
+            
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
